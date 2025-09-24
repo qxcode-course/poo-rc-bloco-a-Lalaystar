@@ -12,8 +12,28 @@
         },
         {
             "label": "2025-09-24_14-33-05",
-            "content": "class animal:\n    def __init__(self, specie:str, age:int, sound:str):\n        self.specie: str=specie\n        self.age:int=0\n        self.sound: str=sound\n\n    def __str__(self):\n        return f\"{self.specie}:{self.age}:{self.sound}\"\ndef main():\n    \n    \n    main()",
+            "content": "@@ -148,20 +148,16 @@\n r=sound%0A\n-    \n %0A    def\n@@ -174,15 +174,8 @@\n elf)\n- -%3E str\n :%0A  \n@@ -248,112 +248,18 @@\n     \n-animal: Animal = Animal(%22%22,0,%22%22)%0A    while True:%0A        line: str=input()%0A        print(%22$%22+line)\n %0A    %0A\n+    \n main\n",
             "lines": "12"
+        },
+        {
+            "label": "2025-09-24_18-32-05",
+            "content": "@@ -1,15 +1,15 @@\n class \n-A\n+a\n nimal:%0A \n@@ -41,16 +41,25 @@\n cie:str,\n+ age:int,\n  sound:s\n@@ -95,16 +95,39 @@\n =specie%0A\n+        self.age:int=0%0A\n         \n@@ -156,27 +156,8 @@\n     \n-    self.age: int=0\n %0A   \n@@ -243,14 +243,8 @@\n d%7D%22%0A\n-    %0A%0A\n def \n@@ -282,16 +282,18 @@\n imal(%22%22,\n+0,\n %22%22)%0A    \n@@ -358,149 +358,12 @@\n ne)%0A\n+\n     \n-    args:list%5Bstr%5D=line.split(%22 %22)%0A%0A        if args%5B0%5D==%22end%22:%0A            break%0A        elif args%5B0%5D==%22show%22:%0A            print(animal)%0A\n %0Amai\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-09-24_18-44-19",
+            "content": "@@ -140,17 +140,16 @@\n : int=0%0A\n-%0A\n     def \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-09-24_19-23-47",
+            "content": "@@ -490,140 +490,8 @@\n mal)\n-%0A        elif args%5B0%5D==%22criar%22:%0A            specie:str=args%5B1%5D%0A            sound:str=args%5B2%5D%0A            animal=Animal(specie,sound)\n %0A%0Ama\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-24_19-26-39",
+            "content": "class Animal:\n    def __init__(self, specie:str, sound:str):\n        self.specie: str=specie\n        self.sound: str=sound\n        self.age: int=0\n\n    def __str__(self) -> str:\n        return f\"{self.specie}:{self.age}:{self.sound}\"\n    \n\ndef main():\n    animal: Animal = Animal(\"\",\"\")\n    while True:\n        line: str=input()\n        print(\"$\"+line)\n        args:list[str]=line.split(\" \")\n\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"show\":\n            print(animal)\n        elif args[0]==\"criar\":\n            specie:str=args[1]\n            sound:str=args[2]\n            animal=Animal(specie,sound)\n\nmain()",
+            "lines": "27"
         }
     ]
 }

@@ -32,8 +32,28 @@
         },
         {
             "label": "2025-09-24_19-26-39",
-            "content": "class Animal:\n    def __init__(self, specie:str, sound:str):\n        self.specie: str=specie\n        self.sound: str=sound\n        self.age: int=0\n\n    def __str__(self) -> str:\n        return f\"{self.specie}:{self.age}:{self.sound}\"\n    \n\ndef main():\n    animal: Animal = Animal(\"\",\"\")\n    while True:\n        line: str=input()\n        print(\"$\"+line)\n        args:list[str]=line.split(\" \")\n\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"show\":\n            print(animal)\n        elif args[0]==\"criar\":\n            specie:str=args[1]\n            sound:str=args[2]\n            animal=Animal(specie,sound)\n\nmain()",
+            "content": "@@ -494,15 +494,140 @@\n %0A       \n+ elif args%5B0%5D==%22criar%22:%0A            specie:str=args%5B1%5D%0A            sound:str=args%5B2%5D%0A            animal=Animal(specie,sound)%0A\n %0Amain()\n",
             "lines": "27"
+        },
+        {
+            "label": "2025-09-30_13-44-12",
+            "content": "@@ -235,121 +235,8 @@\n     \n-%0A    def ageBy(self, amount:int)-%3ENone:%0A        self.age+=amount%0A        if self.age%3E=self.age:%0A            %0A    \n %0A%0Ade\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-30_14-13-24",
+            "content": "@@ -321,31 +321,16 @@\n ge%3E=\n-4:%0A            \n self.age\n =4%0A \n@@ -329,10 +329,9 @@\n .age\n-=4\n+:\n %0A   \n@@ -339,16 +339,21 @@\n         \n+%0A    \n %0A%0Adef ma\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-09-30_14-17-44",
+            "content": "@@ -343,16 +343,28 @@\n f.age=4%0A\n+            \n %0A%0Adef ma\n@@ -555,32 +555,34 @@\n   break%0A        \n+el\n if args%5B0%5D==%22sho\n@@ -615,140 +615,8 @@\n al)%0A\n-        if args%5B0%5D==%22init%22:%0A            specie: str= args%5B1%5D%0A            sound: str=args%5B2%5D%0A            animal=Animal(specie,sound)%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-09-30_14-27-24",
+            "content": "class Animal:\n    def __init__(self, specie:str, sound:str):\n        self.specie: str=specie\n        self.sound: str=sound\n        self.age: int=0\n\n    def __str__(self) -> str:\n        return f\"{self.specie}:{self.age}:{self.sound}\"\n    \n    def ageBy(self, amount:int)->None:\n        self.age+=amount\n        if self.age>=4:\n            self.age=4\n\n\ndef main():\n    animal: Animal = Animal(\"\",\"\")\n    while True:\n        line: str=input()\n        print(\"$\"+line)\n        args:list[str]=line.split(\" \")\n\n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(animal)\n        if args[0]==\"init\":\n            specie: str= args[1]\n            sound: str=args[2]\n            animal=Animal(specie,sound)\n       \nmain()",
+            "lines": "32"
         }
     ]
 }

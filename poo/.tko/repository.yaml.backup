@@ -8,7 +8,9 @@ database: database
 expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  animal: '{rate:100}'
+  enxugar: '{rate:100}'
 flags:
   quests: 0
   tracks: 0

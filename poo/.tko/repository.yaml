@@ -9,12 +9,8 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-<<<<<<< HEAD
   animal: '{rate:100}'
   enxugar: '{rate:100}'
-=======
-  animal: '{rate:25}'
->>>>>>> 2f0b29358dc2fdedc69d3df88b9cdd274d0c2c2d
 flags:
   quests: 0
   tracks: 0

@@ -30,3 +30,8 @@
 2025-10-03 14:35:57, EXEC, v:1, k:animal, mode:FULL, rate:100
 2025-10-03 14:35:58, EXEC, v:1, k:animal, mode:FULL, rate:100
 2025-10-03 14:36:00, MOVE, v:1, k:animal, mode:BACK
+2025-10-03 14:37:06, MOVE, v:1, k:animal, mode:PICK
+2025-10-03 14:37:08, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-10-03 14:37:43, EXEC, v:1, k:animal, mode:FULL, rate:0, size:0
+2025-10-03 15:34:56, EXEC, v:1, k:animal, mode:FULL, rate:25, size:26
+2025-10-03 15:35:26, MOVE, v:1, k:animal, mode:BACK

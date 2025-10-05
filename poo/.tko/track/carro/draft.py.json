@@ -17,8 +17,28 @@
         },
         {
             "label": "2025-10-03_14-34-29",
-            "content": "class Car:\n    def __init__(self):\n        self.gas:int=0\n        self.km:int=0\n        self.pas:int=0\n\n    def __str__(self)->str:\n        return f\"pass: {self.pas}:, gas: {self.gas}, km: {self.km}\"\n\ndef main():\n    car:Car=Car()\n    while True:\n        line:str=input()\n        print(\"$\"+line)\n        args:list[str]=line.split(\" \")\n        \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(car)\n        #if args[0]==\"init\":\nmain()",
+            "content": "@@ -49,15 +49,14 @@\n gas:\n- \n int=0%0A\n+\n     \n@@ -144,16 +144,16 @@\n urn \n-(\n f%22pass:\n+ \n %7Bsel\n@@ -162,14 +162,16 @@\n pas%7D\n+:\n , gas:\n+ \n %7Bsel\n@@ -180,16 +180,18 @@\n gas%7D, km\n+: \n %7Bself.km\n@@ -192,17 +192,16 @@\n elf.km%7D%22\n-)\n %0A%0Adef ma\n@@ -328,17 +328,25 @@\n it(%22 %22)%0A\n+        \n %0A\n-\n         \n@@ -443,7 +443,33 @@\n     \n-%0A%0A%0A\n+  #if args%5B0%5D==%22init%22:%0Amain()\n",
             "lines": "22"
+        },
+        {
+            "label": "2025-10-04_20-35-03",
+            "content": "@@ -422,56 +422,11 @@\n int(\n-f%22pass:%7Bself.pas%7D, gas:%7Bself.gas%7D, km:%7Bself.km%7D%22\n+car\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-04_20-36-36",
+            "content": "@@ -422,19 +422,62 @@\n int(\n-car)%0Amain()\n+f%22pass:%7Bself.pas%7D, gas:%7Bself.gas%7D, km:%7Bself.km%7D%22)%0A    \n   %0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-04_21-14-32",
+            "content": "@@ -45,16 +45,17 @@\n elf.gas:\n+ \n int=0%0A  \n@@ -149,17 +149,16 @@\n (f%22pass:\n- \n %7Bself.pa\n@@ -165,17 +165,16 @@\n s%7D, gas:\n- \n %7Bself.ga\n@@ -179,18 +179,16 @@\n gas%7D, km\n-: \n %7Bself.km\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-04_21-15-48",
+            "content": "class Car:\n    def __init__(self):\n        self.gas:int=0\n        self.km:int=0\n        self.pas:int=0\n\n    def __str__(self)->str:\n        return (f\"pass: {self.pas}, gas: {self.gas}, km: {self.km}\")\n\ndef main():\n    car:Car=Car()\n    while True:\n        line:str=input()\n        print(\"$\"+line)\n        args:list[str]=line.split(\" \")\n\n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(car)\nmain()  \n\n\n",
+            "lines": "23"
         }
     ]
 }

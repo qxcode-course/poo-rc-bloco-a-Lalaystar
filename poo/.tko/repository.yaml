@@ -9,12 +9,14 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-  animal: '{rate:100}'
-  enxugar: '{rate:100}'
+  toalha: '{rate:100, human:5, guide:2, alone:5, study:60}'
+  animal: '{rate:100, human:1, iagen:1, alone:9, study:120}'
+  carro: '{rate:10}'
+  enxugar: '{rate:100, human:5, guide:2, alone:5, study:60}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
-index: animal
+index: carro

@@ -1,22 +1,19 @@
 class Animal:
-    def __init__(self, specie:str, sound:str): #aq o construtor bixa
+    def __init__(self, specie:str, sound:str):
         self.specie: str=specie
         self.sound: str=sound
         self.age: int=0
 
-    def __str__(self) -> str: #aq o toString bixa
-        return f"{self.specie}:{self.age}:{self.sound}"
+    def __str__(self) -> str:
+        return (f"{self.specie}:{self.age}:{self.sound}")
     
-    def ageBy(self, increment:int)->None:
-        if self.age==4:
-            print(f"warning: {self.specie} morreu")
-            return 
+    def ageBy(self, increment:int): 
         self.age+=increment
         if self.age>=4:
             self.age=4
             print(f"warning: {self.specie} morreu")
-    
-    def makeSound(self)->str: #type:ignore 
+
+    def makeSound(self):
         if self.age==0:
             return "---"
         if self.age==1:
@@ -27,9 +24,9 @@ class Animal:
             return self.sound
         if self.age==4:
             return "RIP"
-        
-def main(): #aq acontece a interaçao com o código
-    animal: Animal = Animal("","")
+
+def main():
+    animal:Animal=Animal("","")
     while True:
         line: str=input()
         print("$"+line)

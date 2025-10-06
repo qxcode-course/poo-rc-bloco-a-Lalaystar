@@ -13,6 +13,7 @@ tasks:
     alone:5, study:60}'
   animal: '{rate:100, human:amigos_explicando, iagen:gpt_correcao_guia, alone:9, study:120}'
   carro: '{rate:100, human:Amigo, alone:9, study:120}'
+  calculadora: '{rate:100, human:amigo_relembrar_conceitos, alone:9, study:50}'
   enxugar: '{rate:100, human:amigos_explicando_a_logica, guide:aula_gravada_pelo_professor,
     alone:5, study:60}'
 flags:

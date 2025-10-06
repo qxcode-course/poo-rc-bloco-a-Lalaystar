@@ -3,14 +3,44 @@ class Car:
         self.gas:int=0
         self.km:int=0
         self.pas:int=0
+        self.pasMax=2
+        self.gasMax=100
 
     def __str__(self)->str:
         return (f"pass: {self.pas}, gas: {self.gas}, km: {self.km}")
 
     def Enter(self):
-        #if self.pas>=2:
+        if self.pas<self.pasMax:
             self.pas+=1
-            
+        else:
+            print(f"fail: limite de pessoas atingido")
+
+    def Leave(self):
+        if self.pas>0:
+            self.pas-=1
+        else:
+            print(f"fail: nao ha ninguem no carro")  
+
+    def Gas(self, increment:int)->None:
+        maxGas=100
+        self.gas+=increment
+        if self.gas>maxGas:
+            self.gas=maxGas
+
+    def Drive(self, increment:int)->None:
+        if self.pas==0:
+            print("fail: nao ha ninguem no carro")
+            return
+        if self.gas==0:
+            print("fail: tanque vazio")
+            return
+        if self.gas>=increment:
+            self.km+=increment
+            self.gas-=increment
+        else:
+            self.km+=self.gas
+            print(f"fail: tanque vazio apos andar {self.gas} km")
+            self.gas=0
 
 def main():
     car:Car=Car()
@@ -24,7 +54,15 @@ def main():
         if args[0]=="show":
             print(car)
         if args[0]=="enter":
-
+            car.Enter()
+        if args[0]=="leave":
+            car.Leave()
+        if args[0]=="fuel":
+            increment:int=int(args[1])
+            car.Gas(increment)
+        if args[0]=="drive":
+            increment:int=int(args[1])
+            car.Drive(increment)
 main()  
 
 

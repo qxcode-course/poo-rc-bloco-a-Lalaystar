@@ -1,0 +1,22 @@
+2025-10-05 16:12:40, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 16:14:27, EXEC, v:1, k:carro, mode:FULL, rate:0, size:33
+2025-10-05 16:25:49, EXEC, v:1, k:carro, mode:FULL, rate:30, size:34
+2025-10-05 16:31:01, EXEC, v:1, k:carro, mode:FULL, rate:50, size:41
+2025-10-05 16:50:22, EXEC, v:1, k:carro, mode:FULL, rate:50, size:47
+2025-10-05 16:52:49, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 21:07:22, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 21:07:28, EXEC, v:1, k:carro, mode:FULL, rate:50
+2025-10-05 21:11:41, EXEC, v:1, k:carro, mode:FULL, rate:60, size:50
+2025-10-05 21:13:20, EXEC, v:1, k:carro, mode:FULL, rate:100, size:68
+2025-10-05 21:13:24, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 21:15:52, SELF, v:1, k:carro, rate:100, human:Amigo, alone:9
+2025-10-05 21:16:08, SELF, v:1, k:carro, rate:100, human:Amigo, alone:9, study:120
+2025-10-05 21:17:43, SELF, v:1, k:animal, rate:100, human:amigos_explicando, iagen:gpt_correcao_guia, alone:9, study:120
+2025-10-05 21:19:07, SELF, v:1, k:toalha, rate:100, human:amigos_explicando_a_logica, guide:video_gravado_pelo_professor, alone:5, study:60
+2025-10-05 21:19:15, SELF, v:1, k:toalha, rate:100, human:amigos_explicando_a_logica, guide:video_gravado_pelo_professor, alone:5, study:60
+2025-10-05 21:19:16, MOVE, v:1, k:animal, mode:PICK
+2025-10-05 21:19:20, MOVE, v:1, k:animal, mode:BACK
+2025-10-05 21:19:24, SELF, v:1, k:animal, rate:100, human:amigos_explicando, iagen:gpt_correcao_guia, alone:9, study:120
+2025-10-05 21:19:32, SELF, v:1, k:carro, rate:100, human:Amigo, alone:9, study:120
+2025-10-05 21:20:09, SELF, v:1, k:enxugar, rate:100, human:amigos_explicando_a_logica, guide:aula_gravada_pelo_professor, alone:5, study:60
+2025-10-05 21:20:14, MOVE, v:1, k:calculadora, mode:DOWN

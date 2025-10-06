@@ -9,14 +9,16 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-  toalha: '{rate:100, human:5, guide:2, alone:5, study:60}'
-  animal: '{rate:100, human:1, iagen:1, alone:9, study:120}'
-  carro: '{rate:10}'
-  enxugar: '{rate:100, human:5, guide:2, alone:5, study:60}'
+  toalha: '{rate:100, human:amigos_explicando_a_logica, guide:video_gravado_pelo_professor,
+    alone:5, study:60}'
+  animal: '{rate:100, human:amigos_explicando, iagen:gpt_correcao_guia, alone:9, study:120}'
+  carro: '{rate:100, human:Amigo, alone:9, study:120}'
+  enxugar: '{rate:100, human:amigos_explicando_a_logica, guide:aula_gravada_pelo_professor,
+    alone:5, study:60}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 1
   xray: 0
-index: carro
+index: calculadora
